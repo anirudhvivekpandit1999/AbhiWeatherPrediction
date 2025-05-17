@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 import logging
 from datetime import datetime
 from flask_cors import CORS
+import numpy as np
 
 from ingest import fetch_historical, fetch_forecast
 from interp import scale_features
